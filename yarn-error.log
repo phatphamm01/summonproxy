@@ -33,7 +33,7 @@ npm manifest:
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-      "start": "node index.js"
+      "vercel-build": "node index.js"
     },
     "dependencies": {
       "axios": "^0.24.0",

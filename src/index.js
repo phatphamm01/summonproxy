@@ -10,8 +10,6 @@ app.use(express.json({ limit: "25mb" }));
 axios.defaults.baseURL =
   "http://summonapi-env-1.eba-ifipdfqg.ap-southeast-1.elasticbeanstalk.com/api/v1";
 
-app.use(express.static("public"));
-
 app.post("/", async (req, res) => {
   let { headers, body } = req;
   let { method, url, data } = body;
